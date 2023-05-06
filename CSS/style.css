@@ -1,0 +1,137 @@
+#titulo { /* Le aplica atributos al ID titulo */
+    color: tomato;
+
+}
+
+p.texto { /* Le aplica atributos a la clase texto los parrafos */
+    color: slateblue;
+}
+
+p.especial { /* Le aplica atributos a la clase especial en los parrafos */
+    color: blue;
+}
+    
+div p { /* Le aplica atributos a los parrafos div que se encuentren dentro de la etiqueta div */
+    color: aquamarine;
+}
+
+div h2, div h3 { /* Le aplica atributos a las etiquetas h2 y h3 que se encuentren dentro de la etiqueta div */
+    color: brown;
+}
+
+* { /* Este es un selector universal, aplica todos los atributos al html siempre y cuando no se hayan aplicado el mismo antes*/
+    font-size: 24px;
+    /* color: black; En este caso no se aplica el color ya que los comandos anteriores aplican color a todas las etiquetas existentes en el html */
+}
+
+/* Propiedades del atributo color */
+.colorr {
+    color: #00f;   /* Utilizando el método RGB (Red/Green/Blue), 000 es la ausencia de color y FFF son el máximo de todos los colores */
+}
+
+.colore {
+    color: #91433e; /* Utilizando el método exadecimal (Red=00/Green=00/Blue=00), 000000 es la ausencia de color y FFFFFF son el máximo de todos los colores */
+}
+
+.colorg {
+    color: rgb(102, 165, 20); /* Aquí los valores van desde 0 hasta 255 como el máximo de color, se mantiene el RED/GREEN/BLUE */
+}
+
+.borde {
+    /* border: 5px black solid; El primer valor es el borde, el segundo es el color y el tercero el marco */
+
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#fondo {
+    background-color: rgba(0, 0, 0, 0.3); /*Se comporta igual con los tres primeros, el cuarto elemento es la intensidad o transparencia del color*/
+    background-image: url(virgen.png); /* Coloca una imagen de fondo*/
+    height: 100px; /* Define la altura de la imagen de fondo */
+/*    background-size: cover ; /* Se adacta al tamaño de la pantalla o contendor */ 
+      /* background-size: 100px 100px;
+      background-repeat: repeat-y;
+      background-position:left top ; */
+      background: #f00 url(virgen.png) repeat-y center bottom / 100px 100px;
+}
+
+.margen {
+    background-color: chocolate;
+    /* margin: 15px 20px 25px 30px; /* Margenes arriba, derecha, abajo, izquierda*/
+    /* padding: 30px 25px 20px 15px; Agrega espacios dentro del elemento */ 
+    margin: 15px; /*Le coloca el mismo margen de 15px por todos lados*/
+    padding: 30px 15px 5px; /*Le coloca el mismo paddin de 15px en los lados derecho e izquierdo*/
+    border: 1px solid black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+
+}
+
+.text {
+    font-family: 'Roboto', sans-serif ;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 3px 5px 5px blue; /*Crea una sombra en las letras */
+}
+
+a:link { /* Todos estos link y atributos deben ir en este mismo orden, no se pueden colocar en un orden diferente */
+    color: blueviolet;
+}
+
+a:visited {
+    color:grey;
+}
+
+a:hover {
+    color:yellow;
+}
+
+a:active {
+    color:red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: circle;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    /* display: block;  Presenta en lineas separadas el texto */
+    /* display: none;  Oculta el display,no presenta el texto */
+    visibility: hidden;
+}
+
+.inline {
+    display: inline;
+}
