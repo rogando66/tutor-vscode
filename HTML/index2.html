@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!--Indica el tipo de documento, en este caso HTML 5 -->
+<html> <!-- Es la etiqueta raiz de un documento html -->
+<head> <!-- Es una etiqueta de cabecera -->
+    <title>Mi primera web</title> <!--Etiquita de título -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body> <!--En esta etiqueta es donde se coloca todo el contenido de nuestra web -->
+    <h1>
+        Header h1    
+    </h1>
+    <h2>
+        Header h2    
+    </h2>
+    <h3>
+        Header h3    
+    </h3>
+    <h4>
+        Header h4    
+    </h4>
+    <h5>
+        Header h5    
+    </h5>
+    <h6>
+        Header h6    
+    </h6>
+
+    <p>Parrafo 1</p>
+    <p>Parrafo 2</p>
+    <hr>
+    <h2>Otro titulo</h2>
+    <p>Parrafo 3</p>
+    <p>Parrafo 4</p>
+    <hr>
+    <!--Formularios-->
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Digite nombre" value="Rafael" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Digite apellido" value="Ogando"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Digite comentario">Valor por defecto</textarea>
+        <br>
+        <input type="submit" id="submit" name="submit" />
+        <br>
+        <button id="btn" type="button">Boton</button>
+        <br>
+        <button id="rst" type="reset">Boton reset</button>
+        <br>
+        <button id="sbm" type="submit">submit</button>
+    </form>
+
+        <br>
+
+        <hr>
+        <!-- Lista no ordenada-->
+
+        <ul>
+
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+
+        <br>
+
+                <!-- Lista ordenada-->
+
+                <ol>
+
+                    <li value="50">Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                    <li>
+                        <ol>
+                            <li style="list-style-type: lower-alpha;"> Sub elemento 1</li>
+                            <li style="list-style-type: lower-alpha;"> Sub elemento 2</li>
+                            <li style="list-style-type: lower-alpha;"> Sub elemento 3</li>
+                        </ol>
+                    </li>
+                </ol>
+        
+<hr>
+
+<br>
+
+<!--Tablas-->
+
+<table style="width: 500px;">
+<thead>
+    <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Carros</td>
+        <td>22,000</td>
+    </tr>
+
+    <tr>
+    <td>Motores</td>
+    <td>5,000</td>        
+    </tr>
+</tbody>
+
+<tfoot>
+    <td>Total </td>
+    <td>27,000</td>
+</tfoot>
+</table>
+
+
+<hr>
+    <p>Este texto lleva la etiqueta de <br> <span style="color:blue"> span </span></p>
+    <a target="_blank" href="http://www.google.com.do">Ir a Google</a>
+    <img src="img/virgen.png" width="400"/>
+
+
+
+</body>
+</html>

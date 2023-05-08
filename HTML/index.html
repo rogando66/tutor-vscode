@@ -1,132 +1,50 @@
-<!DOCTYPE html> <!--Indica el tipo de documento, en este caso HTML 5 -->
-<html> <!-- Es la etiqueta raiz de un documento html -->
-<head> <!-- Es una etiqueta de cabecera -->
-    <title>Mi primera web</title> <!--Etiquita de título -->
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+       
+    <link rel="stylesheet" href="style.css" />
+
 </head>
-<body> <!--En esta etiqueta es donde se coloca todo el contenido de nuestra web -->
-    <h1>
-        Header h1    
-    </h1>
-    <h2>
-        Header h2    
-    </h2>
-    <h3>
-        Header h3    
-    </h3>
-    <h4>
-        Header h4    
-    </h4>
-    <h5>
-        Header h5    
-    </h5>
-    <h6>
-        Header h6    
-    </h6>
+<body>
+    <header id="titulo">
+        <h1>Blogo de Rafael Ogando</h1>
+    </header>
+    <section class="container">
+        <article class="post">
+            <h2>Título de mi post</h2>
+            <p>Descripción de mi post</p>
+            <img src="img/virgen.png" width="400" />
+            <p>Texto del artículo, esto es brief de HTML con vista a Fiori</p>
+        </article>
 
-    <p>Parrafo 1</p>
-    <p>Parrafo 2</p>
-    <hr>
-    <h2>Otro titulo</h2>
-    <p>Parrafo 3</p>
-    <p>Parrafo 4</p>
-    <hr>
-    <!--Formularios-->
-    <form action="/formulario" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Digite nombre" value="Rafael" />
-        <br>
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Digite apellido" value="Ogando"/>
-        <br>
-        <label for="comentario">Comentario</label>
-        <br>
-        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Digite comentario">Valor por defecto</textarea>
-        <br>
-        <input type="submit" id="submit" name="submit" />
-        <br>
-        <button id="btn" type="button">Boton</button>
-        <br>
-        <button id="rst" type="reset">Boton reset</button>
-        <br>
-        <button id="sbm" type="submit">submit</button>
-    </form>
+        <article class="post">
+            <h2>Título de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="img/Tabla.png" width="400" />
+            <p>Texto del artículo, esto es brief de HTML con vista a Fiori 2</p>
+        </article>
 
-        <br>
+        <article class="post">
+            <h2>Título de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="img/Fiori.png" width="400" />
+            <p>Texto del artículo, esto es brief de HTML con vista a Fiori 3</p>
+        </article>
 
-        <hr>
-        <!-- Lista no ordenada-->
+    </section>
+    <footer>
+        <section>
+        <a href="#titulo">Ir al inicio</a>
+        <a href="mailto:rogando66@gmail.com">Contactos</a>
+    </section>
 
-        <ul>
+        <p>Copyright 2023</p>
+    </footer>
 
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-            <li>Elemento 4</li>
-        </ul>
-
-        <br>
-
-                <!-- Lista ordenada-->
-
-                <ol>
-
-                    <li value="50">Elemento 1</li>
-                    <li>Elemento 2</li>
-                    <li>Elemento 3</li>
-                    <li>Elemento 4</li>
-                    <li>
-                        <ol>
-                            <li style="list-style-type: lower-alpha;"> Sub elemento 1</li>
-                            <li style="list-style-type: lower-alpha;"> Sub elemento 2</li>
-                            <li style="list-style-type: lower-alpha;"> Sub elemento 3</li>
-                        </ol>
-                    </li>
-                </ol>
-        
-<hr>
-
-<br>
-
-<!--Tablas-->
-
-<table style="width: 500px;">
-<thead>
-    <tr>
-        <th>Producto</th>
-        <th>Precio</th>
-    </tr>
-</thead>
-
-<tbody>
-    <tr>
-        <td>Carros</td>
-        <td>22,000</td>
-    </tr>
-
-    <tr>
-    <td>Motores</td>
-    <td>5,000</td>        
-    </tr>
-</tbody>
-
-<tfoot>
-    <td>Total </td>
-    <td>27,000</td>
-</tfoot>
-</table>
-
-
-<hr>
-    <p>Este texto lleva la etiqueta de <br> <span style="color:blue"> span </span></p>
-    <a target="_blank" href="http://www.google.com.do">Ir a Google</a>
-    <img src="img/virgen.png" width="400"/>
-
-
-
+    
 </body>
 </html>
