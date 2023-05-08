@@ -135,3 +135,31 @@ span {
 .inline {
     display: inline;
 }
+
+#posicion {
+    position: fixed;
+    left: 20px;
+    top: 30px;
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 50;
+    background-color: #00f;
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
